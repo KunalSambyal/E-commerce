@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link rel="stylesheet" href="./src/style.css" />
+        <title>E commercce</title>
+    </head>
+    <body class="h-screen dark:bg-neutral-800 overflow-hidden">
+        <header class="dark:text-white">
+            <!-- Upper navbar -->
+            <div
+                class="flex justify-between items-center sm:gap-x-4 py-2 sm:px-4 px-1 bg-[#FFDDA9] dark:bg-[#705227] dark:shadow-neutral-700 shadow-md w-full"
+            >
+                <div class="flex items-center">
+                    <img
+                        src="/src/assets/logo.png"
+                        alt="Logo"
+                        class="sm:h-8 h-6"
+                    />
+                    <h2
+                        class="sm:text-xl tex-md sm:font-extrabold font-semibold"
+                    >
+                        Shopsy
+                    </h2>
+                </div>
+                <div
+                    class="sm:mx-auto ml-auto sm:flex sm:items-center justify-between bg-white dark:bg-[#111827] sm:px-2 rounded-2xl sm:hover:w-2xl"
+                >
+                    <input
+                        type="text"
+                        placeholder="search"
+                        class="h-8 outline-none sm:block hidden pl-2 w-full"
+                    />
+                    <div
+                        class="sm:text-gray-500 sm:text-sm sm:hover:text-orange-400 sm:bg-none px-2 py-1 bg-linear-30 from-[#FEC22E] to-[#F4802B] text-white rounded-2xl text-center duration-200 cursor-pointer"
+                    >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="mx-2 flex items-center gap-x-2">
+                    <button
+                        class="bg-linear-30 from-[#FEC22E] to-[#F4802B] text-white px-2 py-1 rounded-2xl text-center duration-200 cursor-pointer"
+                    >
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <button
+                        id="theme-button"
+                        class="rounded-2xl duration-200 cursor-pointer inline-flex items-center justify-center shadow-sm"
+                    >
+                        <img
+                            id="theme-button-img"
+                            src="/src/assets/website/dark-mode-button.png"
+                            alt="theme button"
+                            class="h-6 object-cover"
+                        />
+                    </button>
+                </div>
+                <button
+                    id="ham-menu-btn"
+                    class="sm:hidden text-xl font-bold px-1 duration-200 cursor-pointer hover:scale-[1.05] active:translate-0.5"
+                >
+                    <i id="menu-toggle" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Lower navbar -->
+            <div
+                id="ham-nav-menu"
+                class="sm:w-full w-fit sm:bg-white bg-neutral-100 dark:bg-[#111827] py-4 sm:dark:shadow-neutral-700 sm:shadow-md absolute sm:static right-0 duration-300 hidden sm:block"
+            >
+                <ul
+                    class="flex sm:justify-around sm:flex-row flex-col gap-y-4 px-2 sm:py-0 py-4 h-screen sm:h-fit"
+                >
+                    <li
+                        class="hover:text-orange-400 duration-200 font-semibold"
+                    >
+                        <a href="#">Home</a>
+                    </li>
+                    <li
+                        class="hover:text-orange-400 duration-200 font-semibold"
+                    >
+                        <a href="#">Top Rated</a>
+                    </li>
+                    <li
+                        class="hover:text-orange-400 duration-200 font-semibold"
+                    >
+                        <a href="#">Mens Wear</a>
+                    </li>
+                    <li
+                        class="hover:text-orange-400 duration-200 font-semibold"
+                    >
+                        <a href="#">Kids Wear</a>
+                    </li>
+                    <li
+                        class="hover:text-orange-400 duration-200 font-semibold"
+                    >
+                        <a href="#">Electronics</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <script src="/src/script.js"></script>
+    </body>
+</html>
